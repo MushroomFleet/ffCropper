@@ -1,14 +1,20 @@
 [
-    {
-      "source": "path/to/video1.mp4",
-      "in": "000100",
-      "out": "000200",
-      "output": "path/to/output/video1-[timestamp].mp4"
-    },
-    {
-      "source": "path/to/video2.mp4",
-      "in": "000030",
-      "out": "000130",
-      "output": "path/to/output/video2-[timestamp].mp4"
-    }
-  ]
+  {
+    "source": "C:\\Projects\\clip-project\\downloads\\wRbgy8Rf5eo-part000.mp4",
+    "in": "000100",
+    "out": "000200",
+    "output": "C:\\Projects\\clip-project\\output\\video1-[timestamp].mp4"
+  },
+  {
+    "source": "C:\\Projects\\clip-project\\downloads\\wRbgy8Rf5eo-part001.mp4",
+    "in": "000100",
+    "out": "000200",
+    "output": "C:\\Projects\\clip-project\\output\\video2-[timestamp].mp4"
+  },
+  {
+    "source": "C:\\Projects\\clip-project\\downloads\\wRbgy8Rf5eo-part002.mp4",
+    "in": "000030",
+    "out": "000130",
+    "output": "C:\\Projects\\clip-project\\output\\video3-[timestamp].mp4"
+  }
+]
