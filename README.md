@@ -32,7 +32,7 @@ The tool uses system FFmpeg for processing when available and falls back to the 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/ffCropper.git
+   git clone https://github.com/MushroomFleet/ffCropper
    cd ffCropper
    ```
 
