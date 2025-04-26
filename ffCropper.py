@@ -34,7 +34,8 @@ def format_output_filename(output_path, source_path):
     output_path = os.path.normpath(output_path)
     
     if '[timestamp]' in output_path:
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        # Add milliseconds to ensure uniqueness
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S%f')[:19]  # Include 3 digits of milliseconds
         output_path = output_path.replace('[timestamp]', timestamp)
     
     # Check if output path is a directory or ends with separator
@@ -42,7 +43,8 @@ def format_output_filename(output_path, source_path):
         # Extract source filename components
         source_basename = os.path.basename(source_path)
         source_name, source_ext = os.path.splitext(source_basename)
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        # Add milliseconds to ensure uniqueness
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S%f')[:19]  # Include 3 digits of milliseconds
         
         # Combine directory path with formatted filename
         output_path = os.path.join(output_path, f"{source_name}-{timestamp}{source_ext}")
